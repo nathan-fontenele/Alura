@@ -1,0 +1,45 @@
+E:\C#\C# - Youtube\bytebank\bytebank\bin\Debug\net6.0\bytebank.exe
+E:\C#\C# - Youtube\bytebank\bytebank\bin\Debug\net6.0\bytebank.deps.json
+E:\C#\C# - Youtube\bytebank\bytebank\bin\Debug\net6.0\bytebank.runtimeconfig.json
+E:\C#\C# - Youtube\bytebank\bytebank\bin\Debug\net6.0\bytebank.dll
+E:\C#\C# - Youtube\bytebank\bytebank\bin\Debug\net6.0\bytebank.pdb
+E:\C#\C# - Youtube\bytebank\bytebank\obj\Debug\net6.0\bytebank.csproj.AssemblyReference.cache
+E:\C#\C# - Youtube\bytebank\bytebank\obj\Debug\net6.0\bytebank.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\C# - Youtube\bytebank\bytebank\obj\Debug\net6.0\bytebank.AssemblyInfoInputs.cache
+E:\C#\C# - Youtube\bytebank\bytebank\obj\Debug\net6.0\bytebank.AssemblyInfo.cs
+E:\C#\C# - Youtube\bytebank\bytebank\obj\Debug\net6.0\bytebank.csproj.CoreCompileInputs.cache
+E:\C#\C# - Youtube\bytebank\bytebank\obj\Debug\net6.0\bytebank.dll
+E:\C#\C# - Youtube\bytebank\bytebank\obj\Debug\net6.0\refint\bytebank.dll
+E:\C#\C# - Youtube\bytebank\bytebank\obj\Debug\net6.0\bytebank.pdb
+E:\C#\C# - Youtube\bytebank\bytebank\obj\Debug\net6.0\bytebank.genruntimeconfig.cache
+E:\C#\C# - Youtube\bytebank\bytebank\obj\Debug\net6.0\ref\bytebank.dll
+E:\C#\Alura\bytebank\bytebank\bin\Debug\net6.0\bytebank.exe
+E:\C#\Alura\bytebank\bytebank\bin\Debug\net6.0\bytebank.deps.json
+E:\C#\Alura\bytebank\bytebank\bin\Debug\net6.0\bytebank.runtimeconfig.json
+E:\C#\Alura\bytebank\bytebank\bin\Debug\net6.0\bytebank.dll
+E:\C#\Alura\bytebank\bytebank\bin\Debug\net6.0\bytebank.pdb
+E:\C#\Alura\bytebank\bytebank\obj\Debug\net6.0\bytebank.csproj.AssemblyReference.cache
+E:\C#\Alura\bytebank\bytebank\obj\Debug\net6.0\bytebank.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\Alura\bytebank\bytebank\obj\Debug\net6.0\bytebank.AssemblyInfoInputs.cache
+E:\C#\Alura\bytebank\bytebank\obj\Debug\net6.0\bytebank.AssemblyInfo.cs
+E:\C#\Alura\bytebank\bytebank\obj\Debug\net6.0\bytebank.csproj.CoreCompileInputs.cache
+E:\C#\Alura\bytebank\bytebank\obj\Debug\net6.0\bytebank.dll
+E:\C#\Alura\bytebank\bytebank\obj\Debug\net6.0\refint\bytebank.dll
+E:\C#\Alura\bytebank\bytebank\obj\Debug\net6.0\bytebank.pdb
+E:\C#\Alura\bytebank\bytebank\obj\Debug\net6.0\bytebank.genruntimeconfig.cache
+E:\C#\Alura\bytebank\bytebank\obj\Debug\net6.0\ref\bytebank.dll
+E:\Alura\bytebank\bytebank\obj\Debug\net6.0\bytebank.csproj.AssemblyReference.cache
+E:\Alura\bytebank\bytebank\obj\Debug\net6.0\bytebank.GeneratedMSBuildEditorConfig.editorconfig
+E:\Alura\bytebank\bytebank\obj\Debug\net6.0\bytebank.AssemblyInfoInputs.cache
+E:\Alura\bytebank\bytebank\obj\Debug\net6.0\bytebank.AssemblyInfo.cs
+E:\Alura\bytebank\bytebank\obj\Debug\net6.0\bytebank.csproj.CoreCompileInputs.cache
+E:\Alura\bytebank\bytebank\obj\Debug\net6.0\bytebank.dll
+E:\Alura\bytebank\bytebank\obj\Debug\net6.0\refint\bytebank.dll
+E:\Alura\bytebank\bytebank\obj\Debug\net6.0\bytebank.pdb
+E:\Alura\bytebank\bytebank\bin\Debug\net6.0\bytebank.exe
+E:\Alura\bytebank\bytebank\bin\Debug\net6.0\bytebank.deps.json
+E:\Alura\bytebank\bytebank\bin\Debug\net6.0\bytebank.runtimeconfig.json
+E:\Alura\bytebank\bytebank\bin\Debug\net6.0\bytebank.dll
+E:\Alura\bytebank\bytebank\bin\Debug\net6.0\bytebank.pdb
+E:\Alura\bytebank\bytebank\obj\Debug\net6.0\bytebank.genruntimeconfig.cache
+E:\Alura\bytebank\bytebank\obj\Debug\net6.0\ref\bytebank.dll
