@@ -11,7 +11,7 @@ namespace bytebank
         public int numero_agencia;
         public string conta;
         public string titular;
-        public double saldo;
+        public double saldo = 100; //define o valor padrão do atributo
 
         public void Depositar(double valor)
         {
@@ -40,8 +40,8 @@ namespace bytebank
             }
             else
             {
-                this.Sacar(valor);
-                destino.Depositar(valor);
+                this.Sacar(valor); //this.saldo -= valor;
+                destino.Depositar(valor); //destino.saldo += valor;
                 return true;
             }
         }
