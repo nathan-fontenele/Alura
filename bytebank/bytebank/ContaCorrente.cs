@@ -11,6 +11,8 @@ namespace bytebank
         public int numero_agencia;
         public string conta;
         public string titular;
+        public string titularCPF;
+        public string titularProfissao;
         public double saldo = 100; //define o valor padrão do atributo
 
         public void Depositar(double valor)
@@ -44,6 +46,14 @@ namespace bytebank
                 destino.Depositar(valor); //destino.saldo += valor;
                 return true;
             }
+        }
+
+        public void ExibeInformacoes()
+        {
+            Console.WriteLine($"Titular da conta: {titular}");
+            Console.WriteLine($"Número da agência: {numero_agencia}");
+            Console.WriteLine($"Número da conta {conta}");
+            Console.WriteLine($"Saldo da conta: {saldo}\n");
         }
 
 
