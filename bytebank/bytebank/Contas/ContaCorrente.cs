@@ -9,10 +9,31 @@ namespace bytebank.Contas
 {
     public class ContaCorrente
     {
-        public int numero_agencia;
-        public string conta;
-        public Cliente titular; //recebe a referência de Cliente
+        private int numero_agencia;
+        private string conta;
+        public string Conta { get; set; }
+        private Cliente titular; //recebe a referência de Cliente
+        public Cliente Titular { get; set; }
         public double saldo = 100; //define o valor padrão do atributo
+
+        public int Numero_agencia
+        {
+            get
+            {
+                return numero_agencia;
+            }
+            set
+            {
+                if(this.numero_agencia > 3)
+                {
+                    this.numero_agencia = value;
+                }
+                else
+                {
+                    return;
+                }
+            }
+        }
 
         public void Depositar(double valor)
         {
@@ -49,9 +70,9 @@ namespace bytebank.Contas
         }
         public void ExibeInformacoes()
         {
-            Console.WriteLine($"Titular da conta: {titular.nome}");
-            Console.WriteLine($"Profissão: {titular.profissao}");
-            Console.WriteLine($"CPF: {titular.CPF}");
+            Console.WriteLine($"Titular da conta: {Titular.Nome}");
+            Console.WriteLine($"Profissão: {Titular.Profissao}");
+            Console.WriteLine($"CPF: {Titular.Cpf}");
             Console.WriteLine($"Número da agência: {numero_agencia}");
             Console.WriteLine($"Número da conta {conta}");
             Console.WriteLine($"Saldo da conta: {saldo}\n");
