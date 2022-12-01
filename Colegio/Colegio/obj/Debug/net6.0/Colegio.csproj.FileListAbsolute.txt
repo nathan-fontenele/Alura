@@ -1,0 +1,15 @@
+E:\Alura\Colegio\Colegio\bin\Debug\net6.0\Colegio.exe
+E:\Alura\Colegio\Colegio\bin\Debug\net6.0\Colegio.deps.json
+E:\Alura\Colegio\Colegio\bin\Debug\net6.0\Colegio.runtimeconfig.json
+E:\Alura\Colegio\Colegio\bin\Debug\net6.0\Colegio.dll
+E:\Alura\Colegio\Colegio\bin\Debug\net6.0\Colegio.pdb
+E:\Alura\Colegio\Colegio\obj\Debug\net6.0\Colegio.csproj.AssemblyReference.cache
+E:\Alura\Colegio\Colegio\obj\Debug\net6.0\Colegio.GeneratedMSBuildEditorConfig.editorconfig
+E:\Alura\Colegio\Colegio\obj\Debug\net6.0\Colegio.AssemblyInfoInputs.cache
+E:\Alura\Colegio\Colegio\obj\Debug\net6.0\Colegio.AssemblyInfo.cs
+E:\Alura\Colegio\Colegio\obj\Debug\net6.0\Colegio.csproj.CoreCompileInputs.cache
+E:\Alura\Colegio\Colegio\obj\Debug\net6.0\Colegio.dll
+E:\Alura\Colegio\Colegio\obj\Debug\net6.0\refint\Colegio.dll
+E:\Alura\Colegio\Colegio\obj\Debug\net6.0\Colegio.pdb
+E:\Alura\Colegio\Colegio\obj\Debug\net6.0\Colegio.genruntimeconfig.cache
+E:\Alura\Colegio\Colegio\obj\Debug\net6.0\ref\Colegio.dll
