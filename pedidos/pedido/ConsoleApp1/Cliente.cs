@@ -12,14 +12,5 @@ namespace ConsoleApp1
         public string cpf;
         public string email;
         public Endereco endereco;
-
-        public void exibeInformacoes()
-        {
-            Console.WriteLine($"Nome: {nome}");
-            Console.WriteLine($"CPF: {cpf}");
-            Console.WriteLine($"E-mail: {email}");
-            Console.WriteLine($"Endereço: {endereco.rua} {endereco.numero} {endereco.complemento}");
-            Console.WriteLine($"Complemento: {endereco.complemento}");
-        }
     }
 }

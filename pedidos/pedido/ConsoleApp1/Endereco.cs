@@ -11,7 +11,7 @@ namespace ConsoleApp1
         public string rua;
         public string cidade;
         public string bairro;
-        public string complemento;
+        public string cep;
         public int numero;
     }
 }

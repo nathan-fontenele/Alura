@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public class Pedido
+    internal class Pedido
     {
-        public int numeroPedido;
+        public int numero_pedido;
         public Cliente cliente;
         public ItemPedido item;
-        public float valorTotal;
+        public float valor_pedido;
 
-        public void exibeInformacoes()
+        public void ExibePedido()
         {
-            Console.WriteLine($"Número do pedido: {numeroPedido}");
             Console.WriteLine($"Cliente: {cliente.nome}");
             Console.WriteLine($"E-mail: {cliente.email}");
-            Console.WriteLine($"Endereço: {cliente.endereco.rua} {cliente.endereco.numero} {cliente.endereco.complemento}");
-            Console.WriteLine($"Complemento: {cliente.endereco.complemento}");
-            Console.WriteLine($"Item: {item.produto1}");
-            Console.WriteLine($"Item: {item.produto2}");
-            Console.WriteLine($"Item: {item.produto3}");
-            Console.WriteLine($"Quantidade: {item.quantidade}");
-            Console.WriteLine($"Valor total: {valorTotal}");
+            Console.WriteLine($"Endereço: {cliente.endereco.rua}, {cliente.endereco.numero}");
+            Console.WriteLine($"{cliente.endereco.cidade}, {cliente.endereco.bairro}\n");
+            Console.WriteLine($"Itens pedidos:\n");
+            Console.WriteLine($"{item.produto1.descricao} qtde: {item.produto1.quantidade}");
+            Console.WriteLine($"Valor unitário: {item.produto1.valor_unitario}\n");
+            Console.WriteLine($"{item.produto2.descricao} qtde: {item.produto2.quantidade}");
+            Console.WriteLine($"Valor unitário: {item.produto2.valor_unitario}\n");
+            Console.WriteLine($"Subtotal: R${item.produto1.valor_unitario * item.produto1.quantidade + item.produto2.valor_unitario * item.produto2.quantidade}");
         }
     }
 }

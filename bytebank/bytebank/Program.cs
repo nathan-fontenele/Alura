@@ -18,12 +18,6 @@ class Program
         conta.Numero_Agencia = 14;
         conta.Saldo = 200;
 
-        //Console.WriteLine($"Titular: {conta.Titular.Nome}");
-        //Console.WriteLine($"Conta: {conta.Conta}");
-        //Console.WriteLine($"Agência: {conta.Numero_Agencia}");
-        //Console.WriteLine($"Saldo: R${conta.Saldo}");
-        //Console.WriteLine($"Renda: R${conta.Titular.Renda}");
-
         conta.ExibeInformacoe();
 
     }

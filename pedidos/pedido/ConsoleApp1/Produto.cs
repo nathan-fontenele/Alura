@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public class ItemPedido
+    public class Produto
     {
+        public int numero_produto;
+        public string descricao;
+        public float valor_unitario;
         public int quantidade;
-        public int numero_pedido;
-        public Produto produto1;
-        public Produto produto2;
-        public Produto produto3;
     }
 }
