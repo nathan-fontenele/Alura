@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,73 +10,42 @@ namespace bytebank.Contas
 {
     public class ContaCorrente
     {
+        //atributos
         private int numero_agencia;
         private string conta;
-        public string Conta { get; set; }
         private Cliente titular; //recebe a referência de Cliente
+        private Cliente renda;
+        private double saldo = 100; //define o valor padrão do atributo
+
+        //propriedades
+        public int Numero_Agencia { get; set; }
+        public string Conta { get; set; }
         public Cliente Titular { get; set; }
-        public double saldo = 100; //define o valor padrão do atributo
+        public Cliente Renda { get; set; }
+        public double Saldo { get; set;}
+        public static int TotalDeContasCriadas { get; private set; }
 
-        public int Numero_agencia
+        //métodos
+        public void Sacar(int valor)
         {
-            get
-            {
-                return numero_agencia;
-            }
-            set
-            {
-                if(this.numero_agencia > 3)
-                {
-                    this.numero_agencia = value;
-                }
-                else
-                {
-                    return;
-                }
-            }
+            this.Saldo -= valor;
         }
-
-        public void Depositar(double valor)
+        public void Depositar(int valor)
         {
-            saldo += valor;
+            this.Saldo += valor;
         }
-        public bool Sacar(double valor)
+        public bool Transferir(int valor, ContaCorrente contaDestino)
         {
-            if (valor <= saldo)
-            {
-                saldo -= valor;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-
-        }
-        public bool Transferir(double valor, ContaCorrente destino)
-        {
-            if (saldo < valor)
+           if (saldo < valor || valor < 0)
             {
                 return false;
             }
             else
             {
-                Sacar(valor); //this.saldo -= valor;
-                destino.Depositar(valor); //destino.saldo += valor;
-                Console.WriteLine("Saldo após a transferencia:");
-                Console.WriteLine($"Saldo do André: {saldo}");
-                Console.WriteLine($"Saldo do Maria: {destino.saldo}");
+                saldo = saldo - valor;
+                contaDestino.Saldo = contaDestino.saldo + valor;
                 return true;
             }
-        }
-        public void ExibeInformacoes()
-        {
-            Console.WriteLine($"Titular da conta: {Titular.Nome}");
-            Console.WriteLine($"Profissão: {Titular.Profissao}");
-            Console.WriteLine($"CPF: {Titular.Cpf}");
-            Console.WriteLine($"Número da agência: {numero_agencia}");
-            Console.WriteLine($"Número da conta {conta}");
-            Console.WriteLine($"Saldo da conta: {saldo}\n");
         }
     }
 }
