@@ -5,6 +5,8 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using bytebank.Contas;
+using bytebank.Titular;
 
 namespace bytebank.Contas
 {
@@ -46,6 +48,15 @@ namespace bytebank.Contas
                 contaDestino.Saldo = contaDestino.saldo + valor;
                 return true;
             }
+        }
+
+        public void ExibeInformacoe()
+        {
+            Console.WriteLine($"Titular: {Titular.Nome}");
+            Console.WriteLine($"Conta: {Conta}");
+            Console.WriteLine($"Agência: {Numero_Agencia}");
+            Console.WriteLine($"Saldo: R${Saldo}");
+            Console.WriteLine($"Renda: R${Titular.Renda}");
         }
     }
 }
