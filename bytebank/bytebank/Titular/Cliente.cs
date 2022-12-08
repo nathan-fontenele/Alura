@@ -24,7 +24,7 @@ namespace bytebank.Titular
             get { return telefone; }
             set
             {
-                if (value.Length == 11) 
+                if (value.Length == 14) 
                 {
                     telefone = value;
                 }

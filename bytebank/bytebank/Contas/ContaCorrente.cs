@@ -20,7 +20,17 @@ namespace bytebank.Contas
         private double saldo = 100; //define o valor padrão do atributo
 
         //propriedades
-        public int Numero_Agencia { get; set; }
+        public int Numero_Agencia 
+        {
+            get { return this.numero_agencia; }
+            set
+            {
+                if(value > 2)
+                {
+                    this.numero_agencia = value;
+                }
+            }
+        }
         public string Conta { get; set; }
         public Cliente Titular { get; set; }
         public Cliente Renda { get; set; }
@@ -55,6 +65,7 @@ namespace bytebank.Contas
             Console.WriteLine($"Titular: {Titular.Nome}");
             Console.WriteLine($"Conta: {Conta}");
             Console.WriteLine($"Agência: {Numero_Agencia}");
+            Console.WriteLine($"Telefone: {Titular.Telefone}");
             Console.WriteLine($"Saldo: R${Saldo}");
             Console.WriteLine($"Renda: R${Titular.Renda}");
         }
