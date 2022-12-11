@@ -38,6 +38,12 @@ namespace bytebank.Contas
         public static int TotalDeContasCriadas { get; private set; }
 
         //métodos
+        public ContaCorrente(string Conta, int Numero_Agencia)
+        {
+            this.Conta = Conta;
+            this.Numero_Agencia = Numero_Agencia;
+        }
+
         public void Sacar(int valor)
         {
             this.Saldo -= valor;
