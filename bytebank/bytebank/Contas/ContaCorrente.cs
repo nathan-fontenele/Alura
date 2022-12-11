@@ -32,17 +32,19 @@ namespace bytebank.Contas
             }
         }
         public string Conta { get; set; }
-        public Cliente Titular { get; set; }
+        public Cliente Titular{ get; set; }
         public Cliente Renda { get; set; }
         public double Saldo { get; set;}
         public static int TotalDeContasCriadas { get; private set; }
 
         //métodos
-        public ContaCorrente(string Conta, int Numero_Agencia)
+        public ContaCorrente(Cliente titular, string conta, int agencia)
         {
-            this.Conta = Conta;
-            this.Numero_Agencia = Numero_Agencia;
+            Titular = titular;
+            Conta = conta;
+            Numero_Agencia = agencia;
         }
+
 
         public void Sacar(int valor)
         {
@@ -60,7 +62,7 @@ namespace bytebank.Contas
             }
             else
             {
-                saldo = saldo - valor;
+                Sacar(valor);
                 contaDestino.Saldo = contaDestino.saldo + valor;
                 return true;
             }
@@ -73,7 +75,7 @@ namespace bytebank.Contas
             Console.WriteLine($"Agência: {Numero_Agencia}");
             Console.WriteLine($"Telefone: {Titular.Telefone}");
             Console.WriteLine($"Saldo: R${Saldo}");
-            Console.WriteLine($"Renda: R${Titular.Renda}");
+            Console.WriteLine($"Renda: R${Titular.Renda}\n");
         }
     }
 }
