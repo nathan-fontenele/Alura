@@ -38,11 +38,9 @@ namespace bytebank.Contas
         public static int TotalDeContasCriadas { get; private set; }
 
         //métodos
-        public ContaCorrente(Cliente titular, string conta, int agencia)
+        public ContaCorrente()
         {
-            Titular = titular;
-            Conta = conta;
-            Numero_Agencia = agencia;
+            TotalDeContasCriadas++;
         }
 
 

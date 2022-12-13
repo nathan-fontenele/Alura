@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\bytebank"
+    "\\bytebank",
+    "\\bytebank\\Funcionarios"
   ],
-  "SelectedNode": "\\bytebank.sln",
+  "SelectedNode": "\\bytebank\\Funcionarios\\Funcionario.cs",
   "PreviewInSolutionExplorer": false
 }

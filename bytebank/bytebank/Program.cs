@@ -1,6 +1,9 @@
 ﻿using bytebank.Contas;
-using System;
 using bytebank.Titular;
+using bytebank.Funcionarios;
+using System;
+using bytebank;
+using bytebank.Utilitario;
 
 class Program
 {
@@ -44,12 +47,35 @@ class Program
         conta3.Saldo = 100;
         conta3.ExibeInformacoe();
 
+        Console.WriteLine($"Total de contas criada:{ContaCorrente.TotalDeContasCriadas}\n");
+
         Console.WriteLine("-----Trasferência------");
 
         conta2.Transferir(50, conta3);
         conta2.ExibeInformacoe();
         conta3.ExibeInformacoe();
 
-        Console.WriteLine($"Total de contas criadas: {ContaCorrente.TotalDeContasCriadas}");
+        Console.WriteLine("-----Funcionários------");
+        Funcionario pedro = new Funcionario();
+        pedro.Nome = "Pedro Malazartes";
+        pedro.Cpf = "125.654.234-65";
+        pedro.Salario = 2000;
+        pedro.ExibeInformacoe();
+        Console.WriteLine($"Bonificação: {pedro.GetBonificacao()}");
+        
+        Console.WriteLine("-----Diretor------");
+        Diretor roberta = new Diretor();
+        roberta.Nome = "Roberta Silva";
+        roberta.Cpf = "543.653.346.43";
+        roberta.Salario = 5000;
+        roberta.ExibeInformacoe();
+        Console.WriteLine($"Bonificação: {roberta.GetBonificacao()}");
+
+        GerenciadorDeBonificacao gerenciador = new GerenciadorDeBonificacao();
+
+        gerenciador.RegistrarBonificacao(pedro);
+        gerenciador.RegistrarBonificacao(roberta);
+        Console.WriteLine($"Total de bonificaçõe; {gerenciador.TotalDeBonificacoes}");
+        Console.WriteLine($"Total de duncionários: {Funcionario.TotalDeFuncionarios}");
     }
 }
