@@ -56,17 +56,15 @@ class Program
         conta3.ExibeInformacoe();
 
         Console.WriteLine("-----Funcionários------");
-        Funcionario pedro = new Funcionario();
+        Funcionario pedro = new Funcionario("125.654.234-65");
         pedro.Nome = "Pedro Malazartes";
-        pedro.Cpf = "125.654.234-65";
         pedro.Salario = 2000;
         pedro.ExibeInformacoe();
         Console.WriteLine($"Bonificação: {pedro.GetBonificacao()}");
         
         Console.WriteLine("-----Diretor------");
-        Diretor roberta = new Diretor();
+        Diretor roberta = new Diretor("543.653.346.43");
         roberta.Nome = "Roberta Silva";
-        roberta.Cpf = "543.653.346.43";
         roberta.Salario = 5000;
         roberta.ExibeInformacoe();
         Console.WriteLine($"Bonificação: {roberta.GetBonificacao()}");
@@ -75,7 +73,7 @@ class Program
 
         gerenciador.RegistrarBonificacao(pedro);
         gerenciador.RegistrarBonificacao(roberta);
-        Console.WriteLine($"Total de bonificaçõe; {gerenciador.TotalDeBonificacoes}");
+        Console.WriteLine($"\nTotal de bonificaçõe; {gerenciador.TotalDeBonificacoes}");
         Console.WriteLine($"Total de duncionários: {Funcionario.TotalDeFuncionarios}");
     }
 }
