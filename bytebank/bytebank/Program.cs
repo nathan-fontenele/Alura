@@ -2,7 +2,6 @@
 using bytebank.Titular;
 using bytebank.Funcionarios;
 using System;
-using bytebank;
 using bytebank.Utilitario;
 
 class Program
@@ -62,7 +61,7 @@ class Program
         Console.WriteLine($"Bonificação: {pedro.GetBonificacao()}");
         
         Console.WriteLine("-----Diretor------");
-        Diretor roberta = new Diretor("543.653.346.43", 5000);
+        Diretor roberta = new Diretor("543.653.346.43");
         roberta.Nome = "Roberta Silva";
         roberta.ExibeInformacoe();
         Console.WriteLine($"Bonificação: {roberta.GetBonificacao()}");
