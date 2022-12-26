@@ -9,7 +9,7 @@ namespace bytebank
 {
     public class Diretor:Funcionario
     {
-        public Diretor(string cpf):base(cpf)
+        public Diretor(string cpf, int salario):base(cpf, salario)
         {
 
         }
@@ -17,7 +17,11 @@ namespace bytebank
         {
             return this.Salario + base.GetBonificacao();
         }
-        
+        public override double aumentarSalario()
+        {
+            return Salario *= 1.10;
+        }
+
         public void ExibeInformacoe()
         {
             Console.WriteLine($"Nome: {Nome}");
