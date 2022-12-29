@@ -1,0 +1,15 @@
+E:\Alura\Biblioteca\Biblioteca\bin\Debug\net6.0\Biblioteca.exe
+E:\Alura\Biblioteca\Biblioteca\bin\Debug\net6.0\Biblioteca.deps.json
+E:\Alura\Biblioteca\Biblioteca\bin\Debug\net6.0\Biblioteca.runtimeconfig.json
+E:\Alura\Biblioteca\Biblioteca\bin\Debug\net6.0\Biblioteca.dll
+E:\Alura\Biblioteca\Biblioteca\bin\Debug\net6.0\Biblioteca.pdb
+E:\Alura\Biblioteca\Biblioteca\obj\Debug\net6.0\Biblioteca.csproj.AssemblyReference.cache
+E:\Alura\Biblioteca\Biblioteca\obj\Debug\net6.0\Biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+E:\Alura\Biblioteca\Biblioteca\obj\Debug\net6.0\Biblioteca.AssemblyInfoInputs.cache
+E:\Alura\Biblioteca\Biblioteca\obj\Debug\net6.0\Biblioteca.AssemblyInfo.cs
+E:\Alura\Biblioteca\Biblioteca\obj\Debug\net6.0\Biblioteca.csproj.CoreCompileInputs.cache
+E:\Alura\Biblioteca\Biblioteca\obj\Debug\net6.0\Biblioteca.dll
+E:\Alura\Biblioteca\Biblioteca\obj\Debug\net6.0\refint\Biblioteca.dll
+E:\Alura\Biblioteca\Biblioteca\obj\Debug\net6.0\Biblioteca.pdb
+E:\Alura\Biblioteca\Biblioteca\obj\Debug\net6.0\Biblioteca.genruntimeconfig.cache
+E:\Alura\Biblioteca\Biblioteca\obj\Debug\net6.0\ref\Biblioteca.dll
