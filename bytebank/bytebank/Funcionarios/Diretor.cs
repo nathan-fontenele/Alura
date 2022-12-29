@@ -8,17 +8,18 @@ namespace bytebank.Funcionarios
 {
     public class Diretor : Funcionario
     {
+        public override double GetBonificacao()
+        {
+            return Salario * 0.5;
+        }
         public Diretor(string cpf) : base(cpf, 5000)
         {
 
         }
-        public override double GetBonificacao()
-        {
-            return Salario + base.GetBonificacao();
-        }
+       
         public override double aumentarSalario()
         {
-            return Salario *= 1.10;
+            return Salario *= 1.15;
         }
 
         public void ExibeInformacoe()
