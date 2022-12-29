@@ -23,7 +23,6 @@ namespace bytebank.Funcionarios
             this.Cpf = cpf;
             TotalDeFuncionarios++;
         }
-
         public void ExibeInformacoe()
         {
             Console.WriteLine($"Nome: {Nome}");

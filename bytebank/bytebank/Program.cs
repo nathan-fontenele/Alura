@@ -4,6 +4,7 @@ using bytebank.Funcionarios;
 using System;
 using bytebank.Utilitario;
 using System.Security.Cryptography.X509Certificates;
+using bytebank.SistemaInterno;
 
 class Program
 {
@@ -102,6 +103,25 @@ class Program
 
         }
 
-        CalcularBonificacao();
+        void UsarSistema()
+        {
+            SistemaInterno sistemaInterno= new SistemaInterno();
+
+            Diretor roberta = new Diretor("123456");
+            roberta.Nome = "Roberta";
+            roberta.Login = "Roberta";
+            roberta.Senha = "123";
+
+            GerenteDeContas ursula = new GerenteDeContas("645634");
+            ursula.Nome = "Ursula";
+            ursula.Login = "Ursula";
+            ursula.Senha = "123";
+
+            sistemaInterno.Login(roberta, "321", "Roberta");
+            sistemaInterno.Login(ursula, "123", "Ursula");
+            
+        }
+
+        UsarSistema();
     }
 }
