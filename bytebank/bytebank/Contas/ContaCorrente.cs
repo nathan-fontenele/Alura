@@ -36,10 +36,14 @@ namespace bytebank.Contas
         public Cliente Renda { get; set; }
         public double Saldo { get; set;}
         public static int TotalDeContasCriadas { get; private set; }
+        public static double TaxaOperacao { get; set; }
 
         //métodos
-        public ContaCorrente()
+        public ContaCorrente(int agencia, string conta)
         {
+            this.Numero_Agencia = agencia;
+            this.Conta = conta;
+            TaxaOperacao = 30 / TotalDeContasCriadas;
             TotalDeContasCriadas++;
         }
 
