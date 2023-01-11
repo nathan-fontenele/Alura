@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace bytebank.Funcionarios
 {
-    public class GerenteDeContas : Autenticar
+    public class GerenteDeContas :FuncionarioAutenticavel
     {
         
         public override double GetBonificacao()
@@ -22,10 +22,6 @@ namespace bytebank.Funcionarios
         public override double aumentarSalario()
         {
             return Salario *= 1.05;
-        }
-        public override bool Autenticacao(string login, string senha)
-        {
-            return (this.Senha == senha && this.Login == login); ;
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace bytebank.Funcionarios
 {
-    public class Diretor : Autenticar
+    public class Diretor : FuncionarioAutenticavel
     {
         public override double GetBonificacao()
         {
@@ -29,10 +29,5 @@ namespace bytebank.Funcionarios
             Console.WriteLine($"Salário: R${Salario}");
         }
 
-        public override bool Autenticacao(string login, string senha)
-        {
-
-            return (this.Senha == senha && this.Login == login);
-        }
     }
 }

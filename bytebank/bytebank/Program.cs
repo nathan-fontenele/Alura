@@ -5,6 +5,7 @@ using System;
 using bytebank.Utilitario;
 using System.Security.Cryptography.X509Certificates;
 using bytebank.SistemaInterno;
+using bytebank.Parceria;
 
 class Program
 {
@@ -105,7 +106,7 @@ class Program
 
         void UsarSistema()
         {
-            SistemaInterno sistemaInterno= new SistemaInterno();
+            SistemaInterno sistemaInterno = new SistemaInterno();
 
             Diretor roberta = new Diretor("123456");
             roberta.Nome = "Roberta";
@@ -117,8 +118,19 @@ class Program
             ursula.Login = "Ursula";
             ursula.Senha = "123";
 
-            sistemaInterno.Login(roberta, "321", "Roberta");
-            sistemaInterno.Login(ursula, "123", "Ursula");
+            ParceiroComercial carlos = new ParceiroComercial();
+            carlos.Login = "Carlos";
+            carlos.Senha = "999";
+
+            Arquiteto marcio = new Arquiteto();
+            marcio.Senha = "444";
+            marcio.Login = "Marcio";
+            marcio.CNPJ = "123";
+
+            sistemaInterno.Login(roberta, "123", "Roberta");
+            sistemaInterno.Login(ursula, "321", "Ursula");
+            sistemaInterno.Login(carlos, "999", "Carlos");
+            sistemaInterno.Login(marcio, "444", "Marcio");
             
         }
 

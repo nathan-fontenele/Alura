@@ -8,17 +8,19 @@ using bytebank.Funcionarios;
 
 namespace bytebank.SistemaInterno
 {
-    public abstract class Autenticar : Funcionario
+    public interface IAutenticar
     {
-        public Autenticar(string cpf, int salario) : base(cpf, salario)
-        {
-        }
-
+        
         public string Login { get; set; }
         public string Senha { get; set; }
 
         public abstract bool Autenticacao(string login, string senha);
 
         
+    }
+
+    public interface IBonificacao
+    {
+        double GetBonificacao();
     }
 }
