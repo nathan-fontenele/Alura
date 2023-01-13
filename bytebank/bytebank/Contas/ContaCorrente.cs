@@ -43,17 +43,15 @@ namespace bytebank.Contas
         {
             this.Numero_Agencia = agencia;
             this.Conta = conta;
-         
+            TotalDeContasCriadas++;
             try //tente executar
             {
-                TaxaOperacao = 30 / 2;
+                TaxaOperacao = 30 / TotalDeContasCriadas;
             }
-            catch(DivideByZeroException) //se for encontrada uma exceção
+            catch (DivideByZeroException) //se for encontrada uma exceção
             {
                 Console.WriteLine("Não é possível dividir por 0");
             }
-
-            TotalDeContasCriadas++;
         }
 
 

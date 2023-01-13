@@ -50,8 +50,8 @@ class Program
         conta3.Saldo = 100;
         conta3.ExibeInformacoe();
 
-        Console.WriteLine($"Total de contas criada:{ContaCorrente.TotalDeContasCriadas}\n");
-        Console.WriteLine($"Taxa de Operação: {ContaCorrente.TaxaOperacao}");
+        Console.WriteLine($"Total de contas criada:{ContaCorrente.TotalDeContasCriadas}");
+        Console.WriteLine($"Taxa de Operação: {ContaCorrente.TaxaOperacao}\n");
 
         Console.WriteLine("-----Trasferência------");
 
