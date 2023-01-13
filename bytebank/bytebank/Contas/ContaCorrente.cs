@@ -14,7 +14,7 @@ namespace bytebank.Contas
     {
         //atributos
         private int numero_agencia;
-        private string conta;
+        private int conta;
         private Cliente titular; //recebe a referência de Cliente
         private Cliente renda;
         private double saldo = 100; //define o valor padrão do atributo
@@ -23,7 +23,7 @@ namespace bytebank.Contas
         public int Numero_Agencia 
         {
             get { return this.numero_agencia; }
-            set
+            private set
             {
                 if(value > 2)
                 {
@@ -31,7 +31,7 @@ namespace bytebank.Contas
                 }
             }
         }
-        public string Conta { get; set; }
+        public int Conta { get; }
         public Cliente Titular{ get; set; }
         public Cliente Renda { get; set; }
         public double Saldo { get; set;}
@@ -43,7 +43,6 @@ namespace bytebank.Contas
         {
             this.Numero_Agencia = agencia;
             this.Conta = conta;
-            TotalDeContasCriadas++;
             try //tente executar
             {
                 TaxaOperacao = 30 / TotalDeContasCriadas;
@@ -52,6 +51,7 @@ namespace bytebank.Contas
             {
                 Console.WriteLine("Não é possível dividir por 0");
             }
+            TotalDeContasCriadas++;
         }
 
 
